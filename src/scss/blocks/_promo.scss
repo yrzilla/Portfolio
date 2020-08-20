@@ -1,0 +1,33 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('https://via.placeholder.com/1920x800') no-repeat 50%/cover;
+    padding-top: 205px;
+    &__title {
+        width: 540px;
+        margin-top: 10px;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    &__link {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        color: #000;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        @include before__circle;
+        z-index: 2;
+    }
+}
