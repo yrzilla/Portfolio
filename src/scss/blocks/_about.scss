@@ -1,0 +1,55 @@
+.about {
+    padding-top: 120px;
+    &__wrap {
+        display: flex;
+        img {
+            display: block;
+            margin-right: 70px;
+        }
+    }
+    &__skills {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        @include before__circle;
+        z-index: 2;
+    }
+    &__info {
+        .divider {
+            margin: 0;
+        }
+    }
+    &__descr {
+        margin-top: 20px;
+    }
+    &__item {
+        width: 270px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 6px;
+    }
+    &__image {
+        width: 100%;
+    }
+    &__icon {
+        position: relative;
+        padding: 15px 0 0 15px;
+        @include before__circle;
+        margin-right: 20px;
+        &::before {
+            top: 0;
+        }
+        img {
+            margin: 0;
+        }
+    }
+}
