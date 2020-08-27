@@ -12,4 +12,11 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.classList.remove('active');
     });
 
+    const progress = document.querySelectorAll('.skills__rating-progress'),
+          line = document.querySelectorAll('.skills__rating-line span');
+    
+    progress.forEach((item, i) => {
+        line[i].style.width = item.innerHTML;
+    });
+
 });
