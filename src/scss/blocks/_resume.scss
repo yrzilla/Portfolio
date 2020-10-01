@@ -19,14 +19,13 @@
         text-align: center;
     }
     &__wrapper {
-        margin-top: 60px;
-        padding: 0 65px;
-        display: flex;
-        justify-content: space-between;
-        
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
     }
     &__column {
-        width: 425px;
+        // width: 425px;
         &-title {
             position: relative;
             padding-left: 35px;
